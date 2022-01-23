@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { signIn } from "next-auth/react"
 
-const navbarItems = ["home", "about-us", "features", "pricing", "faq", "blog"]
+
+const navbarItems = ["about", "features", "pricing", "work", "blog"]
+
 function Navbar() {
   return (
     <nav className="navbar">
@@ -13,19 +14,23 @@ function Navbar() {
             </Link>
           </div>
           <div className="nav__main">
-            <ul className="nav__list">
+            <ul className="nav__main--list">
+              <li>
+                <Link className="nav__main--list__link" href="/">Home</Link>
+              </li>
               {navbarItems.map((item) => (
                 <li>
-                  <Link href={`/${item}`}>{item}</Link>
+                  <Link className="nav__main--list__link" href={`/${item}`}>{item}</Link>
                 </li>
               ))}
             </ul>
-            {false ? (
-              <div>
+            {/*----*/}
+            {true ? (
+              <div className="nav__main--sign">
                 Sign In
               </div>
             ) : (
-              <div className="nav__account">
+              <div className="nav__main--account">
                 <img src="https://avatars.githubusercontent.com/u/76143018?v=4" alt="Account Img"/>
                 <span>Umarkhon</span>
               </div>
