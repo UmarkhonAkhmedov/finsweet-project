@@ -1,0 +1,61 @@
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+// Variables
+$tintBlue: #1C1E53;
+$white: #ffffff;
+$lightYellow: #FCD980;
+$lightInk: #BBBBCB;
+$royalBlue: #2405F2;
+$darkBlue: #282938;
+$yellow: #FCD980;
+$darkInk: #5239FA;
+$buttonDark: #1B1C2B;
+
+$font-sm: 14px;
+$font-med: 16px;
+$font-xmed: 18px;
+$font-slg: 24px;
+$font-lg: 32px;
+$font-xlg: 48px;
+
+// General Styles
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: lightblue;
+  font-size: $font-med;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  padding: 0 160px;
+  margin: 0 auto;
+  background-color: black;
+
+  @media screen and (max-width:1366px){
+    padding: 0 43px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+.button {
+  display: inline-block;
+  color: $buttonDark;
+  background-color: $lightYellow;
+}
+
