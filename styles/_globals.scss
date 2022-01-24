@@ -16,16 +16,9 @@ $font-sm: 14px;
 $font-med: 16px;
 $font-xmed: 18px;
 $font-slg: 24px;
-$font-lg: 32px;
+$font-lg: 28px;
 $font-xlg: 48px;
-@media screen and (max-width:768px){
-  $font-sm: 12px;
-  $font-med: 14px;
-  $font-xmed: 16px;
-  $font-slg: 22px;
-  $font-lg: 28px;
-  $font-xlg: 40px;
-}
+
 
 // General Styles
 * {
@@ -41,7 +34,6 @@ body {
   font-size: $font-med;
   color: $darkBlue;
   overflow-x: hidden;
-  
 }
 
 .container {
@@ -68,9 +60,31 @@ a {
 li {
   list-style-type: none;
 }
+h2 {
+  font-size: $font-xlg;
+  font-weight: 600;
+  @media screen and (max-width:425px){
+    font-size: 36px;
+  }
+}
+h3 {
+  font-size: $font-lg;
+  font-weight: 500;
+  @media screen and (max-width:425px){
+    font-size: $font-slg;
+  }
+}
+p {
+  line-height: 28px;
+  @media screen and (max-width:425px){
+    font-size: $font-sm;
+    line-height: 20px;
+  }
+}
 .button {
   display: inline-block;
   color: $buttonDark;
   background-color: $lightYellow;
 }
+
 
