@@ -18,6 +18,14 @@ $font-xmed: 18px;
 $font-slg: 24px;
 $font-lg: 32px;
 $font-xlg: 48px;
+@media screen and (max-width:768px){
+  $font-sm: 12px;
+  $font-med: 14px;
+  $font-xmed: 16px;
+  $font-slg: 22px;
+  $font-lg: 28px;
+  $font-xlg: 40px;
+}
 
 // General Styles
 * {
@@ -32,6 +40,8 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: $font-med;
   color: $darkBlue;
+  overflow-x: hidden;
+  
 }
 
 .container {
@@ -42,6 +52,12 @@ body {
 
   @media screen and (max-width:1366px){
     padding: 0 43px;
+  }
+  @media screen and (max-width:768px){
+    padding: 0 30px;
+  }
+  @media screen and (max-width:425px){
+    padding: 0 20px;
   }
 }
 

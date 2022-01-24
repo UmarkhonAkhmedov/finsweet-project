@@ -1,9 +1,12 @@
 import Link from "next/link";
-
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import { useState } from "react"
 
 const navbarItems = ["about", "features", "pricing", "work", "blog"]
 
 function Navbar() {
+  const [menu, setMenu] = useState()
   return (
     <nav className="navbar">
       <div className="container">
@@ -23,9 +26,10 @@ function Navbar() {
                   <Link className="nav__main--list__link" href={`/${item}`}>{item}</Link>
                 </li>
               ))}
+              <CloseIcon className="nav__main--list__button"/>
             </ul>
             {/*----*/}
-            {true ? (
+            {false ? (
               <div className="nav__main--sign">
                 Sign In
               </div>
@@ -35,6 +39,9 @@ function Navbar() {
                 <span>Umarkhon</span>
               </div>
             )}
+            <div className="nav__main--menu">
+              <MenuIcon className="nav__main--menu__icon"/>
+            </div>
           </div>
         </div>
       </div>
