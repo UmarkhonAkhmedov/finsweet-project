@@ -63,3 +63,24 @@ export const featuresHomeData = [
     text: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. "
   }
 ]
+
+export const featuresAboutData = [
+  {
+    id: 1,
+    img: "text",
+    title: "Customize with ease",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim."
+  },
+  {
+    id: 2,
+    img: "custom",
+    title: "Perfectly Responsive",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim."
+  },
+  {
+    id: 3,
+    img: "client",
+    title: "Friendly Support",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim."
+  }
+]
