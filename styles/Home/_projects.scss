@@ -1,0 +1,34 @@
+.site-projects {
+  
+  .projects {
+    &__heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h2 {
+        font-weight: 600;
+        margin-right: 10px;
+        line-height: 40px;
+      }
+      span {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 120px;
+        transition: all 0.3s ease;
+        
+        a {
+          display: flex;
+          width: 90px;
+          margin-right: 10px;
+          font-weight: 500;
+          color: $darkBlue;
+          flex-wrap: nowrap;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    
+  }
+}

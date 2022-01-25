@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Hero from '../components/Home/Hero'
 import HomeWork from '../components/Home/HomeWork'
+import Projects from '../components/Home/Projects'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <Hero heading="Building stellar websites for early startups" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt." buttonMain="View our work" buttonSm="View Pricing" img="Home/hero__main.svg" link="/work"/>
       <HomeWork/>
+      <Projects/>
     </div>
   )
 }

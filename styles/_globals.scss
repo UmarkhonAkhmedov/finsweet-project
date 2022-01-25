@@ -17,7 +17,7 @@ $font-med: 16px;
 $font-xmed: 18px;
 $font-slg: 24px;
 $font-lg: 28px;
-$font-xlg: 48px;
+$font-xlg: 44px;
 
 
 // General Styles
@@ -63,28 +63,45 @@ li {
 h2 {
   font-size: $font-xlg;
   font-weight: 600;
-  @media screen and (max-width:425px){
+  @media screen and (max-width:768px){
     font-size: 36px;
+    line-height: 20px;
+  }
+  @media screen and (max-width:425px){
+    font-size: $font-lg;
   }
 }
 h3 {
   font-size: $font-lg;
   font-weight: 500;
-  @media screen and (max-width:425px){
+  @media screen and (max-width:768px){
     font-size: $font-slg;
+  }
+  @media screen and (max-width:425px){
+    font-size: 22px;
   }
 }
 p {
   line-height: 28px;
+  
   @media screen and (max-width:425px){
     font-size: $font-sm;
     line-height: 20px;
   }
 }
-.button {
-  display: inline-block;
-  color: $buttonDark;
-  background-color: $lightYellow;
+a {
+  color: inherit;
 }
+.s-padding {
+  padding: 120px 0;
+
+  @media screen and (max-width:768px){
+    padding: 80px 0;
+  }
+  @media screen and (max-width:425px){
+    padding: 50px 0;
+  }
+}
+
 
 
