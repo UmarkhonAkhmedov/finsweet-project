@@ -11,6 +11,7 @@ $darkBlue: #282938;
 $yellow: #FCD980;
 $darkInk: #5239FA;
 $buttonDark: #1B1C2B;
+$grey: #F4F6FC;
 
 $font-sm: 14px;
 $font-med: 16px;
@@ -65,10 +66,11 @@ h2 {
   font-weight: 600;
   @media screen and (max-width:768px){
     font-size: 36px;
-    line-height: 20px;
+    line-height: 40px;
   }
   @media screen and (max-width:425px){
     font-size: $font-lg;
+    line-height: 28px;
   }
 }
 h3 {
