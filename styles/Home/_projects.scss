@@ -1,5 +1,4 @@
 .site-projects {
-  
   .projects {
     &__heading {
       display: flex;
@@ -26,6 +25,202 @@
         }
         &:hover {
           opacity: 0.8;
+        }
+      }
+    }
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 60px;
+      @media screen and (max-width: 768px){
+        flex-direction: column;
+        margin-top: 30px;
+      }
+
+      &--left {
+        position: relative;
+        margin-right: 20px;
+
+        img {
+          max-width: 820px;
+          width: 100%;
+        }
+        div {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          height: 99%;
+          top: 0;
+          left: 0;
+          width: 45%;
+          color: $white;
+          padding: 0px 30px 50px 30px;
+          background: linear-gradient(340deg, rgba(28, 30, 83, 1.0), rgba(28, 30, 83, 0.4));
+          transition: all 0.3s ease;
+          h4 {
+            margin-bottom: 16px;
+          }
+          p {
+            opacity: 0.8;
+            margin-bottom: 40px;
+          }
+          span {
+            display: flex;
+            align-items: center;
+            color: $yellow;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            img {
+              width: 24px;
+              margin-left: 10px;
+            }
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+          @media screen and (max-width:1024px){
+            padding: 0px 15px 30px 15px;
+            height: 98%;
+            h4 {
+              margin-bottom: 5px;
+            }
+            p {
+              margin-bottom: 20px;
+              font-size: $font-sm;
+            }
+          }
+          @media screen and (max-width:768px){
+            height: 98.5%;
+          }
+          @media screen and (max-width:500px){
+            padding: 0px 10px 20px 10px;
+            height: 97.5%;
+            h4 {
+              margin-bottom: 5px;
+            }
+            p {
+              margin-bottom: 5px;
+              line-height: 16px;
+              font-size: 12px;
+            }
+            span {
+              font-size: 12px;
+              img {
+                width: 16px;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 768px){
+          margin-right: 0px;
+          img {
+            max-width: 1000px;
+            width: 100%;
+          }
+        }
+      }
+
+      &--right {
+
+        &__top {
+          position: relative;
+          margin-bottom: 32px;
+          img {
+            max-width: 390px;
+            width: 100%;
+          }
+          div {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 99%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: $white;
+            padding: 0px 30px 50px 30px;
+            background: linear-gradient(340deg, rgba(28, 30, 83, 1.0), rgba(28, 30, 83, 0.4));
+            transition: all 0.3s ease;
+            h4 {
+              margin-bottom: 16px;
+              max-width: 250px;
+            }
+            span {
+              display: flex;
+              align-items: center;
+              color: $yellow;
+              font-weight: 500;
+              transition: all 0.3s ease;
+              img {
+                width: 24px;
+                margin-left: 10px;
+              }
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+            @media screen and (max-width:1024px){
+              padding: 0px 15px 30px 15px;
+              height: 98%;
+              h4 {
+                margin-bottom: 5px;
+              }
+            }
+            @media screen and (max-width:500px){
+              padding: 0px 10px 20px 10px;
+              h4 {
+                margin-bottom: 5px;
+              }
+              p {
+                margin-bottom: 5px;
+                line-height: 16px;
+                font-size: 12px;
+              }
+              span {
+                font-size: 12px;
+                img {
+                  width: 16px;
+                  margin-left: 5px;
+                }
+              }
+            }
+          }
+          
+          @media screen and (max-width:768px){
+            margin-bottom: 0px;
+          }
+          
+        }
+        @media screen and (max-width:768px){
+          display: flex;
+          justify-content: space-between;
+          &__top {
+            margin-bottom: 0px;
+            width: 49%;
+            img {
+              max-width: 400px;
+              width: 100%;
+            }
+          }
+          &__bottom {
+            width: 49%;
+            img {
+              max-width: 400px;
+              width: 100%;
+            }
+          }
+        }
+        
+        
+        &__bottom {
+          img {
+            max-width: 390px;
+            width: 100%;
+          }
         }
       }
     }

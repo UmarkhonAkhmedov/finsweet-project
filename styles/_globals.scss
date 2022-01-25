@@ -81,6 +81,20 @@ h3 {
     font-size: 22px;
   }
 }
+h4 {
+  font-size: $font-slg;
+  font-weight: 600;
+  @media screen and (max-width:1024px){
+    font-size: 20px;
+  }
+  @media screen and (max-width:768px){
+    font-size: $font-xmed;
+  }
+  @media screen and (max-width:500px){
+    font-size: $font-med;
+  }
+}
+
 p {
   line-height: 28px;
   
