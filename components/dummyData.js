@@ -121,3 +121,5 @@ export const whoData = [
   }
 
 ]
+
+export const brandData = ["users", "chain", "rect--circle", "circle", "burger", "rect"]

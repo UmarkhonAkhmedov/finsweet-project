@@ -1,0 +1,25 @@
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 48px;
+  @media screen and (max-width:1024px){
+    justify-content: center;
+  }
+  @media screen and (max-width:425px){
+    padding-top: 30px;
+  }
+
+  img {
+    transform: scale(0.95);
+    margin: 5px;
+    @media screen and (max-width:1024px){
+      margin: 10px;
+    }
+    @media screen and (max-width:425px){
+      transform: scale(0.7);
+      margin: 5px;
+    }
+  }
+}
