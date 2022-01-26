@@ -10,11 +10,11 @@ function About() {
     <div className=''>
       <AboutUs/>
       <Who/>
-      <div className='s-padding'>
+      <div className='sl-padding'>
         <h2 className='main__heading '>The main benefits of working with us</h2>
         <Feature data={featuresAboutData} color="#F4F6FC"/>
-        <Brand/>
       </div>
+      <Brand/>
     </div>
   );
 }
