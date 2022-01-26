@@ -55,12 +55,15 @@
         border-radius: 50%;
         border: none;
         
+        .icon {
+          width: 26px;
+        }
       }
 
       &__left {
         margin-right: 20px;
         background-color: $white;
-        color: grey;
+        color: rgba($darkBlue, 60%);
         transition: all 0.3s ease;
 
         &:hover {
@@ -75,7 +78,7 @@
         transition: all 0.3s ease;
         &:hover {
           background-color: $white;
-          color: grey;
+          color: rgba($darkBlue, 60%);
         }
       }
     }

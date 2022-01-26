@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { testimonialData } from "./dummyData";
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function Testimonials() {
   const [current, setCurrent] = useState(testimonialData[0])
@@ -16,10 +18,10 @@ function Testimonials() {
         </div>
         <div className="testimonials__main--buttons">
           <button className="testimonials__main--buttons__left">
-            L
+            <ArrowBackIosNewIcon className="icon"/>
           </button>
           <button className="testimonials__main--buttons__right">
-            R
+            <ArrowForwardIosIcon className="icon"/>
           </button>
         </div>
       </div>
