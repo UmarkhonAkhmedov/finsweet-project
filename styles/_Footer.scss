@@ -79,6 +79,8 @@
       }
       h2 {
         margin-bottom: 20px;
+        color: $white;
+        margin-top: -10px;
         @media screen and (max-width: 650px){
           margin-bottom: 10px;
         }

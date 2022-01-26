@@ -1,0 +1,28 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+  
+  p {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin: 0 15px;
+      a {
+        text-transform: capitalize;
+        font-weight: 500;
+        color: inherit;
+        transition: all 0.3s ease;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

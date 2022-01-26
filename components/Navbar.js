@@ -3,7 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react"
 
-const navbarItems = ["about", "features", "pricing", "work", "blog"]
+export const navbarItems = ["about", "features", "pricing", "work", "blog"]
 
 function Navbar() {
   const [menu, setMenu] = useState()
