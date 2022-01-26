@@ -1,4 +1,3 @@
-import React from 'react';
 import InfoImg from '../InfoImg';
 
 function Mission() {
