@@ -129,6 +129,15 @@ a {
   font-size: 38px;
   font-weight: 600;
   line-height: 50px;
+
+  @media screen and (max-width:600px){
+    font-size: 30px;
+    line-height: 40px;
+  }
+  @media screen and (max-width:425px){
+    font-size: 28px;
+    line-height: 30px;
+  }
 }
 
 

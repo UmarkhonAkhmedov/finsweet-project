@@ -5,6 +5,10 @@
     font-size: 30px;
     font-weight: 500;
     line-height: 44px;
+    @media screen and (max-width: 425px){
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   &__main {
@@ -26,6 +30,7 @@
       span {
         display: flex;
         flex-direction: column;
+        text-align: left;
         h5 {
           font-size: 17px;
           font-weight: 500;
@@ -49,15 +54,29 @@
         height: 48px;
         border-radius: 50%;
         border: none;
-        background-color: $white;
+        
       }
 
       &__left {
+        margin-right: 20px;
+        background-color: $white;
+        color: grey;
+        transition: all 0.3s ease;
 
+        &:hover {
+          background-color: $darkInk;
+        color: $white;
+        }
       }
 
       &__right {
-
+        background-color: $darkInk;
+        color: $white;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: $white;
+          color: grey;
+        }
       }
     }
   }
