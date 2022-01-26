@@ -21,8 +21,8 @@ function Navbar() {
               <li>
                 <Link className="nav__main--list__link" href="/">Home</Link>
               </li>
-              {navbarItems.map((item) => (
-                <li>
+              {navbarItems.map((item, id) => (
+                <li key={id}>
                   <Link className="nav__main--list__link" href={`/${item}`}>{item}</Link>
                 </li>
               ))}

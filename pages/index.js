@@ -1,8 +1,11 @@
 import Head from 'next/head'
+import FAQ from '../components/FAQ'
 import Hero from '../components/Home/Hero'
 import HomeFeatures from '../components/Home/HomeFeatures'
+import HomeTestimonials from '../components/Home/HomeTestimonials'
 import HomeWork from '../components/Home/HomeWork'
 import Projects from '../components/Home/Projects'
+
 
 export default function Home() {
   return (
@@ -16,6 +19,8 @@ export default function Home() {
       <HomeWork/>
       <Projects/>
       <HomeFeatures/>
+      <HomeTestimonials/>
+      <FAQ/>
     </div>
   )
 }

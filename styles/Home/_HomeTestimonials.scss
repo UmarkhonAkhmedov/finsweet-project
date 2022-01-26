@@ -1,0 +1,20 @@
+.site-homeTestimonials {
+  background-color: $lightGrey;
+
+  .homeTestimonials {
+    display: flex;
+    justify-content: space-between;
+    
+    &__heading {
+      width: 30%;
+
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__carousel {
+      width: 65%;
+    }
+  }
+}

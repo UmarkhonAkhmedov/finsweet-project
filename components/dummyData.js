@@ -84,3 +84,24 @@ export const featuresAboutData = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim."
   }
 ]
+
+export const testimonialData = {
+  0: {
+    client: "Jenny Wilson",
+    clientJob:"Vice President",
+    clientImg: "testimonials__women.svg",
+    quote: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
+  },
+  1: {
+    client: "Jenny Wilson",
+    clientJob:"Vice President",
+    clientImg: "testimonials__women.svg",
+    quote: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
+  },
+  2: {
+    client: "Jenny Wilson",
+    clientJob:"Vice President",
+    clientImg: "testimonials__women.svg",
+    quote: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
+  }
+}

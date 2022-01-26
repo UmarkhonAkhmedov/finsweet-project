@@ -12,6 +12,7 @@ $yellow: #FCD980;
 $darkInk: #5239FA;
 $buttonDark: #1B1C2B;
 $grey: #F4F6FC;
+$lightGrey: #FCFDFE;
 
 $font-sm: 14px;
 $font-med: 16px;
@@ -123,6 +124,11 @@ a {
   width: 90%;
   margin: 0 auto 30px auto;
   text-align: center;
+}
+.sm-heading {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 50px;
 }
 
 
