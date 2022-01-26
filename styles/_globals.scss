@@ -19,7 +19,7 @@ $font-med: 16px;
 $font-xmed: 18px;
 $font-slg: 24px;
 $font-lg: 28px;
-$font-xlg: 44px;
+$font-xlg: 42px;
 
 
 // General Styles
@@ -118,7 +118,7 @@ a {
   color: inherit;
 }
 .s-padding {
-  padding: 120px 0;
+  padding: 110px 0;
 
   @media screen and (max-width:768px){
     padding: 80px 0;
@@ -128,7 +128,7 @@ a {
   }
 }
 .sl-padding {
-  padding: 100px 0;
+  padding: 90px 0;
 
   @media screen and (max-width:768px){
     padding: 70px 0;
