@@ -1,0 +1,48 @@
+.process {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 768px){
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__main {
+    width: 23%;
+    @media screen and (max-width: 768px){
+      max-width: 230px;
+      width: 100%;
+      margin: 20px 7px;
+    }
+    @media screen and (max-width: 550px){
+      width: 45%;
+      margin: 20px 0px;
+    }
+    
+    &--line {
+      display: flex;
+      align-items: center;
+      
+      &__circle {
+        display: inline-block;
+        background-color: $royalBlue;
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      &__border {
+        display: inline-block;
+        border-bottom: 2px dotted $royalBlue;
+        max-width: 210px;
+        width: 100%;
+      }
+    }
+
+    &--info {
+      h6 {
+        font-size: 22px;
+        font-weight: 500;
+        margin: 25px 0 5px 0;
+      }
+    }
+  }
+}
