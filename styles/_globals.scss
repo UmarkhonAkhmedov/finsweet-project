@@ -97,6 +97,14 @@ h4 {
     font-size: $font-med;
   }
 }
+h5 {
+  font-size: $font-xmed;
+  font-weight: 500;
+
+  @media scren and (max-width:425px){
+    font-size: $font-med;
+  }
+}
 
 p {
   line-height: 28px;
@@ -117,6 +125,16 @@ a {
   }
   @media screen and (max-width:425px){
     padding: 50px 0;
+  }
+}
+.sl-padding {
+  padding: 100px 0;
+
+  @media screen and (max-width:768px){
+    padding: 70px 0;
+  }
+  @media screen and (max-width:425px){
+    padding: 40px 0;
   }
 }
 .main__heading {
