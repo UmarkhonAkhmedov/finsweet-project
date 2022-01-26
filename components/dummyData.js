@@ -105,3 +105,5 @@ export const testimonialData = {
     quote: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
   }
 }
+
+export const footerSocialIconsData = ['facebook', 'twitter', 'instagram', 'linkedin']

@@ -1,0 +1,84 @@
+.site-footer {
+  background-color: $tintBlue;
+  padding-top: 90px;
+  color: rgba($grey, 80%);
+  @media screen and (max-width: 650px){
+    
+  }
+
+  .footer {
+    display: flex;
+    @media screen and (max-width:650px){
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__left {
+      margin-right: 120px;
+      @media screen and (max-width:650px){
+        margin-right: 0px;
+        p {
+          margin: 0 auto;
+        }
+      }
+      &--logo {
+        width: 140px;
+        margin-bottom: 22px;
+      }
+      p {
+        max-width: 400px;
+        width: 100%;
+        margin-bottom: 60px;
+      }
+      &--contact {
+        display: flex;
+        align-items: center;
+        background-color: $yellow;
+        flex-wrap: wrap;
+        max-width: 500px;
+        width: 100%;
+        padding: 17px 20px 17px 30px;
+        color: $darkBlue;
+
+        h5 {
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+        h6 {
+          font-size: 16px;
+          font-weight: 400;
+          color: rgba($darkBlue, 80%)
+        }
+        &__email {
+          margin-right: 30px;
+        }
+        &__call {
+          
+        }
+      }
+    }
+
+    &__right {
+      max-width: 400px;
+      
+      h2 {
+        margin-bottom: 20px;
+      }
+      &--icons {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+
+        a {
+          margin-right: 25px;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: scale(1.4);
+          }
+        }
+      }
+    }
+  }
+}
