@@ -3,7 +3,7 @@
   padding-top: 90px;
   color: rgba($grey, 80%);
   @media screen and (max-width: 650px){
-    
+    padding-top: 40px;
   }
 
   .footer {
@@ -30,6 +30,9 @@
         max-width: 400px;
         width: 100%;
         margin-bottom: 60px;
+        @media screen and (max-width: 650px){
+          margin-bottom: 20px;
+        }
       }
       &--contact {
         display: flex;
@@ -40,6 +43,14 @@
         width: 100%;
         padding: 17px 20px 17px 30px;
         color: $darkBlue;
+        @media screen and (max-width: 650px){
+          margin: 0 auto;
+          justify-content: center;
+          padding: 17px 10px 17px 10px;
+        }
+        @media screen and (max-width: 410px){
+          flex-direction: column;
+        }
 
         h5 {
           font-size: 18px;
@@ -53,29 +64,42 @@
         }
         &__email {
           margin-right: 30px;
-        }
-        &__call {
-          
+          @media screen and (max-width: 410px){
+            margin-right: 0px;
+            margin-bottom: 10px;
+          }
         }
       }
     }
 
     &__right {
       max-width: 400px;
-      
+      @media screen and (max-width: 650px){
+        margin: 50px auto 0 auto;
+      }
       h2 {
         margin-bottom: 20px;
+        @media screen and (max-width: 650px){
+          margin-bottom: 10px;
+        }
       }
       &--icons {
         display: flex;
         align-items: center;
         margin-top: 30px;
+        @media screen and (max-width: 650px){
+          margin: 20px auto 0 auto;
+          justify-content: center;
+        }
 
         a {
           margin-right: 25px;
           transition: all 0.3s ease;
           &:hover {
             transform: scale(1.4);
+          }
+          @media screen and (max-width: 650px){
+            margin: 0px 15px;
           }
         }
       }
