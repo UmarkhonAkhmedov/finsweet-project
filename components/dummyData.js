@@ -199,3 +199,26 @@ export const accordionData = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ]
+
+export const pricingPlansData = [
+  {
+    price: "$299",
+    subtitle: "Per Design",
+    title: "Landing Page",
+    text: "When you’re ready to go beyond prototyping in Figma.",
+  },
+  {
+    price: "$399",
+    subtitle: "Multi Design",
+    title: "Website Page",
+    text: "When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help.",
+  },
+  {
+    price: "$499",
+    subtitle: "Per Design",
+    title: "Complex Project",
+    text: "When you’re ready to go beyond prototyping in Figma.",
+  }
+]
+
+export const pricingFeaturesData = ["All limited links", "Own analytics platform", "Chat support", "Optimize hashtags", "Unlimited users", "Assist and Help"]
