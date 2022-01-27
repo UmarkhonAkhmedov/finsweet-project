@@ -1,9 +1,9 @@
-import React from 'react';
+import FAQ from '../components/FAQ'
 
 function pricing() {
   return (
     <div>
-      
+      <FAQ/>
     </div>
   );
 }
