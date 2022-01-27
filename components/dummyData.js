@@ -146,3 +146,33 @@ export const processData = [
     text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
   }
 ]
+
+export const teamData = [
+  {
+    id: 1,
+    img: "first",
+    name: "John Smith",
+    job: "CEO"
+  },
+  {
+    id: 2,
+    img: "second",
+    name: "Simon Adams",
+    job: "CTO"
+  },
+  {
+    id: 3,
+    img: "third",
+    name: "Paul Jones",
+    job: "Design Lead"
+  },
+  {
+    id: 4,
+    img: "fourth",
+    name: "Sara Hardin",
+    job: "Project Manager"
+  },
+  
+]
+
+export const teamSocialIconsData = ['facebook', 'twitter', 'linkedin']

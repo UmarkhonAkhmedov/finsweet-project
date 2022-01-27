@@ -2,6 +2,7 @@ import React from 'react';
 import AboutUs from '../components/About/AboutUs';
 import Mission from '../components/About/Mission';
 import Process from '../components/About/Process';
+import Team from '../components/About/Team';
 import Vision from '../components/About/Vision';
 import Who from '../components/About/Who';
 import Brand from '../components/Brand';
@@ -23,6 +24,7 @@ function About() {
         <Feature data={featuresAboutData} color="#F4F6FC"/>
       </div>
       <Brand/>
+      <Team/>
     </div>
   );
 }
