@@ -1,9 +1,9 @@
-import React from 'react';
+import Article from '../components/Blog/Article';
 
 function blog() {
   return (
     <div>
-      
+      <Article/>
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    max-width: 900px;
+    width: 100%;
+  }
+  span {
+    margin: 16px 0 32px 0;
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    max-width: 830px;
+    width: 100%;
+    margin: 40px 0 10px 0;
+  }
+  a {
+    color: $royalBlue;
+  }
+}
