@@ -4,6 +4,7 @@ import Brand from '../components/Brand'
 import Feature from '../components/Feature';
 import { featuresAboutData } from '../components/dummyData';
 import InfoImg from '../components/InfoImg';
+import FAQ from '../components/FAQ'
 
 function features() {
   return (
@@ -17,6 +18,7 @@ function features() {
       <div className='container'>
         <InfoImg subTitle="Use Client-first" title="Top agencies and freelancers around the world use Client-first " text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation." img="/images/features/client__img.png"/>
       </div>
+      <FAQ/>
     </div>
   );
 }
