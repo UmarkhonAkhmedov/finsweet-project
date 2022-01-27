@@ -1,0 +1,26 @@
+.buildTogether {
+  text-align: center;
+
+  h2 {
+    margin: 0 auto;
+    max-width: 730px;
+    width: 100%;
+  }
+  p {
+    max-width: 560px;
+    width: 100%;
+    margin: 20px auto 40px auto;
+  }
+
+  a {
+    background-color: $yellow;
+    padding: 16px 50px;
+    border-radius: 41px;
+    font-size: $font-med;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #FFCE51;
+    }
+  }
+}
