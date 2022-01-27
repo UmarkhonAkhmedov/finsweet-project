@@ -5,7 +5,7 @@ function InfoImg({subTitle, title, text, img}) {
     <div className='infoImg'>
       <div className='infoImg__info'>
         <h5>{subTitle}</h5>
-        <h2>{title}</h2>
+        <h2 className='h2-heading'>{title}</h2>
         <p>{text}</p>
       </div>
       <div className='infoImg__img'>
