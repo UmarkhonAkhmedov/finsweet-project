@@ -4,6 +4,7 @@ import Hero from '../components/Home/Hero'
 import HomeFeatures from '../components/Home/HomeFeatures'
 import HomeTestimonials from '../components/Home/HomeTestimonials'
 import HomeWork from '../components/Home/HomeWork'
+import Inquiry from '../components/Home/Inquiry'
 import Projects from '../components/Home/Projects'
 
 
@@ -21,6 +22,7 @@ export default function Home() {
       <HomeFeatures/>
       <HomeTestimonials/>
       <FAQ/>
+      <Inquiry/>
     </div>
   )
 }
