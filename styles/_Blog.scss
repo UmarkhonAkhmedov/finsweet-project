@@ -11,12 +11,9 @@
   }
 
   &__block {
-    width: 30.0%;
+    width: 31.5%;
     margin-top: 40px;
-
-    @media screen and (max-width:1024px){
-      width: 31.5%;
-    }
+    
     @media screen and (max-width:850px){
       width: 49.0%;
     }
