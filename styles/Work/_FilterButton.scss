@@ -1,0 +1,31 @@
+.filterButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width:550px){
+    flex-wrap: wrap;
+    justify-self: center;
+  }
+
+  button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    color: rgba($darkBlue, 70%);
+    margin: 0 12px;
+    font-size: $font-xmed;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $royalBlue;
+    }
+    &:focus {
+      color: $royalBlue;
+    } 
+
+    @media screen and (max-width:550px){
+      margin: 4px 10px;
+    }
+  }
+}

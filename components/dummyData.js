@@ -288,7 +288,7 @@ export const templateData = [
     id: 1,
     img: "first",
     title: "Template 1",
-    category: "Webflow Design",
+    category: "UI Design",
     text: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle."
 
   },
@@ -296,7 +296,7 @@ export const templateData = [
     id: 2,
     img: "second",
     title: "Template 2",
-    category: "Ui Design",
+    category: "Webflow Design",
     text: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle."
     
   },
@@ -312,7 +312,7 @@ export const templateData = [
     id: 4,
     img: "fourth",
     title: "Template 4",
-    category: "Ui Design",
+    category: "UI Design",
     text: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle."
     
   },

@@ -54,6 +54,9 @@
             &:hover {
               color: $white;
             }
+            &:focus {
+              color: $white;
+            }
           }
         }
         &__button {
