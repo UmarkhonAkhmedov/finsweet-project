@@ -6,8 +6,8 @@ function BuildTogether() {
       <div className="container">
         <div className="buildTogether">
           <h2>Let's build something great together</h2>
-          <p>Nullam vitae purus at tortor mattis dapibus. Morbi purus est, ultricies nec dolor sit amet, scelerisque cursus purus.</p>
-          <Link href="/contact">Contact Us</Link>
+          <p className="buildTogether__text">Nullam vitae purus at tortor mattis dapibus. Morbi purus est, ultricies nec dolor sit amet, scelerisque cursus purus.</p>
+          <Link className="buildTogether__link" href="/contact">Contact Us</Link>
         </div>
       </div>
     </div>

@@ -124,5 +124,13 @@
       margin-top: 40px;
     }
   }
-
+  h2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+.buildTogether__text { 
+  @media screen and (max-width:425px){
+    margin-bottom: 30px !important;
+  }
 }

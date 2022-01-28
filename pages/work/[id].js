@@ -1,4 +1,5 @@
 import React from 'react';
+import BuildTogether from "../../components/Work/BuildTogether"
 
 function CaseStudies() {
   return (
@@ -42,6 +43,7 @@ function CaseStudies() {
             <li><img src="/images/work/work__id--about__circle.svg"/> Excepteur sint occaecat cupidatat non proident, sunt in culpa</li>
           </ul>
         </div>
+        <BuildTogether/>
       </div>
     </div>
   );
