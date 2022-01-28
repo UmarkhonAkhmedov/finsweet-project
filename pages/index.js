@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { homeBlogData } from '../components/dummyData'
 import FAQ from '../components/FAQ'
 import Hero from '../components/Home/Hero'
 import HomeFeatures from '../components/Home/HomeFeatures'
@@ -6,7 +7,7 @@ import HomeTestimonials from '../components/Home/HomeTestimonials'
 import HomeWork from '../components/Home/HomeWork'
 import Inquiry from '../components/Home/Inquiry'
 import Projects from '../components/Home/Projects'
-
+import Blog from '../components/Blog';
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
       <HomeTestimonials/>
       <FAQ/>
       <Inquiry/>
+      <h2 className='container'>Our Blog</h2>
+      <Blog data={homeBlogData}/>
     </div>
   )
 }

@@ -6,7 +6,7 @@ function Blog({data}) {
       <div className='blog'>
         {data.map((index, id) => (
           <div className='blog__block' key={id}>
-            <img className='blog__block--img' src={`/images/blog/blog__${index.img}.png`}/>
+            <img className='blog__block--img' src={`/images/${index.img}.png`}/>
             <time>{index.date}</time>
             <h6>{index.title}</h6>
             <p>{index.text}</p>
