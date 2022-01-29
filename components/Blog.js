@@ -10,7 +10,7 @@ function Blog({data}) {
             <time>{index.date}</time>
             <h6>{index.title}</h6>
             <p>{index.text}</p>
-            <Link href="/blog:id">
+            <Link href={`/blog/${id + 1}`}>
               <span>Read More <img src="/images/blog/blog__arrow.svg" alt="" /></span>
             </Link>
           </div>

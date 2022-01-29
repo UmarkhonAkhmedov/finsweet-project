@@ -1,6 +1,6 @@
-import Blog from '../components/Blog';
-import Article from '../components/Blog/Article';
-import { BlogblogData } from '../components/dummyData';
+import Blog from '../../components/Blog';
+import Article from '../../components/Blog/Article';
+import { BlogblogData } from '../../components/dummyData';
 
 function blog() {
   return (
