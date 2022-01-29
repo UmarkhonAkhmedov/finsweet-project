@@ -2,10 +2,12 @@ import Link from "next/link";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react"
+import { signIn, signOut, useSession } from "next-auth/react"
 
 export const navbarItems = ["about", "features", "pricing", "work", "blog"]
 
 function Navbar() {
+  const { data: session } = useSession()
   const [menu, setMenu] = useState()
   return (
     <nav className="navbar">
@@ -29,7 +31,7 @@ function Navbar() {
               <CloseIcon className="nav__main--list__button"/>
             </ul>
             {/*----*/}
-            {false ? (
+            {/* {signIn ? (
               <div className="nav__main--sign">
                 Sign In
               </div>
@@ -38,7 +40,21 @@ function Navbar() {
                 <img src="https://avatars.githubusercontent.com/u/76143018?v=4" alt="Account Img"/>
                 <span>Umarkhon</span>
               </div>
-            )}
+            )} */}
+            <div onClick={!session ? signIn : signOut}>
+              <div className="nav__main--account">
+                <div>
+                  {session ? (
+                    <img src={`session.user.img`}/>
+                  ) : `""`}
+                </div>
+                <span>{session ? `${session.user.name}` : (
+                  <div className="nav__main--sign">
+                    Sign In
+                  </div>
+                )}</span>
+              </div>
+            </div>
             <div className="nav__main--menu">
               <MenuIcon className="nav__main--menu__icon"/>
             </div>

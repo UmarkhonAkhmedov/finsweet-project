@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useParams} from 'react';
+import { templateData } from '../../components/dummyData';
+import { useParams } from "@reach/router"
 
 function ReadBlog() {
+  const params = useParams();
   return (
     <div className='container'>
+      <h1>{params.templateData[1].title}</h1>
       <div className='readBlog s-padding'>
       <div className='article'>
         <h2>A UX Case Study on Creating a Studious Environment for Students</h2>
