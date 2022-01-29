@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer'
 export default async (req, res) => {
   const {name, email, context, select, text} = req.body
   const transporter = nodemailer.createTransport({
-    host: "smtp.ethereal.email",
+    host: "smtp.gmail.com",
     port: 465,
     secure: true,
     auth: {
@@ -16,7 +16,7 @@ export default async (req, res) => {
   try {
     const emailRes = await transporter.sendMail({
       from: email,
-      to: 'umarkhonakhmedov2000@gmail.com',
+      to: 'muhammad.umar.testing@gmail.com',
       subject: `Context form submission from ${name}`,
       html: `
       <p>You have a new contact form submission</p>

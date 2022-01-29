@@ -1,8 +1,10 @@
 import { useForm } from "react-hook-form"
 import axios from "axios";
+import { useRouter } from "next/router"
 
 function Form() {
   const {register, handleSubmit, formState: { errors }, reset } = useForm()
+  const router = useRouter()
   async function onSubmitForm(values){
     let config = {
       method: 'post',
@@ -14,8 +16,9 @@ function Form() {
     }
     try {
       const response = await axios(config)
-      if(response.data.status == 200){
-        console.log('Success')
+      if(response.status == 200){
+        reset({name: "", email: "", text: "", context: "", select: "", text: ""})
+        router.push("/contact")
       }
 
     } catch (error) {
