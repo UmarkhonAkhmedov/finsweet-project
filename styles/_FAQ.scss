@@ -48,18 +48,10 @@
 
 }
 
-.accordion {
-  
-}
 .accordion-item {
   border-bottom: 1px solid #ECECF1;
 }
-.accordion .accordion-item:first-child .title {
 
-}
-.accordion .accordion-item:last-child .title {
-
-}
 .accordion .accordion-item .title {
   position: relative;
   background-color: $white;
@@ -137,7 +129,7 @@
   font-size: 29px;
   transform: rotate(-135deg);
   top: 15px;
-  transition: transform 0.3s ease ;
+  transition: transform 0.5s ease ;
 }
 .accordion .accordion-item.active .panel {
   max-height: 500px;

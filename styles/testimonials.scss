@@ -26,6 +26,7 @@
         height: 50px;
         margin-right: 8px;
         object-fit: cover;
+        border-radius: 50%;
       }
       span {
         display: flex;
@@ -65,20 +66,22 @@
         background-color: $white;
         color: rgba($darkBlue, 60%);
         transition: all 0.3s ease;
+        cursor: pointer;
 
         &:hover {
           background-color: $darkInk;
-        color: $white;
+          color: $white;
         }
       }
 
       &__right {
-        background-color: $darkInk;
-        color: $white;
+        background-color: $white;
+        color: rgba($darkBlue, 60%);
+        cursor: pointer;
         transition: all 0.3s ease;
-        &:hover {
-          background-color: $white;
-          color: rgba($darkBlue, 60%);
+        &:hover, &:active {
+          background-color: $darkInk;
+          color: $white;
         }
       }
     }
