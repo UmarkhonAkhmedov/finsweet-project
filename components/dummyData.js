@@ -87,20 +87,20 @@ export const featuresAboutData = [
 
 export const testimonialData = {
   0: {
-    client: "Jenny Wilson",
-    clientJob:"Vice President",
+    client: "Jenny Wilson0",
+    clientJob:"UI Designer",
     clientImg: "testimonials__women.svg",
-    quote: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
+    quote: "They understand our product and are able to add new features with a great focus. The best agency we’ve worked with so far.",
   },
   1: {
-    client: "Jenny Wilson",
+    client: "Jenny Wilson1",
     clientJob:"Vice President",
     clientImg: "testimonials__women.svg",
-    quote: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
+    quote: "Able to add new features with a great focus. The best agency we’ve worked with so far. They understand our product",
   },
   2: {
-    client: "Jenny Wilson",
-    clientJob:"Vice President",
+    client: "Jenny Wilson2",
+    clientJob:"Product Designer",
     clientImg: "testimonials__women.svg",
     quote: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
   }

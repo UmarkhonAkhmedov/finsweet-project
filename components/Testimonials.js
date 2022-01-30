@@ -1,10 +1,23 @@
-import { useState, useEffect } from "react";
-import { testimonialData } from "./dummyData";
+import { useState, useEffect, useLayoutEffect } from "react";
+import { templateData, testimonialData } from "./dummyData";
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function Testimonials() {
-  const [current, setCurrent] = useState(testimonialData[0])
+  const [current, setCurrent] = useState(templateData[0]);
+  const length = testimonialData.length
+
+  const nextClick = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1)
+  }
+  const prevClick = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1)
+  }
+
+  if(!Array.isArray(testimonialData) || testimonialData.length <= 0){
+    return null;
+  }
+  
   return (
     <div className="testimonials">
       <p>"{current.quote}"</p>
@@ -18,10 +31,10 @@ function Testimonials() {
         </div>
         <div className="testimonials__main--buttons">
           <button className="testimonials__main--buttons__left">
-            <ArrowBackIosNewIcon className="icon"/>
+            <ArrowBackIosNewIcon className="icon" onClick={prevClick}/>
           </button>
           <button className="testimonials__main--buttons__right">
-            <ArrowForwardIosIcon className="icon"/>
+            <ArrowForwardIosIcon className="icon" onClick={nextClick}/>
           </button>
         </div>
       </div>
