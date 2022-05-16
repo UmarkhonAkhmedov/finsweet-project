@@ -101,7 +101,7 @@ export const testimonialData = {
   2: {
     client: "Jenny Wilson",
     clientJob:"Product Designer",
-    clientImg: "testimonials__women.svg",
+    clientImg: "testimonials__men--third.jpg",
     quote: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
   }
 }

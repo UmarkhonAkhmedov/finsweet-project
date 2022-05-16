@@ -36,7 +36,7 @@ function Projects({title, }) {
               </div>
             </div>
             <div className='projects__main--right__bottom'>
-              <img src="/images/home/project__main--bottom.png" alt="" />
+            <img src="/images/home/project__main--top.png" alt="" />
             </div>
           </div>
         </div>
