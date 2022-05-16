@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer'
 
-export default async (req, res) => {
+const sendingMail = async (req, res) => {
   const {name, email, context, select, text} = req.body
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -37,3 +37,5 @@ export default async (req, res) => {
   res.status(200).json(req.body)
   console.log(req.body)
 }
+
+export default sendingMail;

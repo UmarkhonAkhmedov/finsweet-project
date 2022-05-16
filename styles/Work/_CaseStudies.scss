@@ -16,6 +16,7 @@
     max-width: 500px;
     width: 100%;
     margin: 12px 0;
+    text-align: left;
   }
   p {
     width: 90%;
@@ -108,9 +109,7 @@
         align-items: center;
         margin: 10px 0;
 
-        img {
-          margin-right: 15px;
-        }
+        
       }
     }
     &--img {

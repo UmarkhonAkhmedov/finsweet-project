@@ -1,4 +1,4 @@
-import React, {useParams} from 'react';
+import React from 'react';
 import { templateData } from '../../components/dummyData';
 import { useParams } from "@reach/router"
 
