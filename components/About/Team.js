@@ -1,5 +1,6 @@
 import React from 'react';
 import { teamSocialIconsData, teamData } from '../dummyData';
+import Image from 'next/image';
 
 function Team() {
   return (
@@ -9,11 +10,11 @@ function Team() {
         {teamData.map((item) => (
           <div className='team__block' key={item.id}>
             <div className='team__block--img'>
-              <img className='team__block--img__main' src={`/images/about/team__${item.img}.svg`}/>
+              <Image width={168} height={168} className='team__block--img__main' src={`/images/about/team__${item.img}.svg`} alt=""/>
               <div className='team__block--img__links'>
                 {teamSocialIconsData.map((icon, index) => (
-                <a key={index} href={`https://www.${icon}.com"`} target="_blank">
-                  <img src={`/images/home/footer__icon--${icon}.svg`} alt=""/>
+                <a key={index} href={`https://www.${icon}.com"`}>
+                  <Image width={13} height={13} src={`/images/home/footer__icon--${icon}.svg`} alt=""/>
                 </a>
                 ))}
               </div>

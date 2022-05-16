@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const portfolioIconsData = ["facebook", "twitter", "instagram", "linkedin"]
@@ -12,7 +13,7 @@ function Portfolio() {
           <div className='portfolio__icons'>
             {portfolioIconsData.map((item, id) => (
               <a key={id} target="_blank" href={`https://www.${item}.com`}>
-                <img src={`/images/work/portfolio__icon--${item}.svg`} alt="" />
+                <Image width={16} height={16} src={`/images/work/portfolio__icon--${item}.svg`} alt="" />
               </a>
             ))}
           </div>
