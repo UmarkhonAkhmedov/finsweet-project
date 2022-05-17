@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { footerSocialIconsData } from './dummyData';
@@ -9,7 +10,7 @@ function Footer() {
       <div className='container footer'>
         <div className='footer__left'>
           <Link href="/">
-            <img className='footer__left--logo' src="/images/home/footer__logo.svg"/>
+            <Image width={156} height={38}  src="/images/home/footer__logo.svg"/>
           </Link>
           <p>We are always open to discuss your project and improve your online presence.</p>
           <div className='footer__left--contact'>

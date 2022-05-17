@@ -12,7 +12,7 @@ function Portfolio() {
           <p>We help teams create great digital products by providing them with tools and technology to make the design-to-code process universally accessible.</p>
           <div className='portfolio__icons'>
             {portfolioIconsData.map((item, id) => (
-              <a key={id} target="_blank" href={`https://www.${item}.com`}>
+              <a key={id} href={`https://www.${item}.com`}>
                 <Image width={16} height={16} src={`/images/work/portfolio__icon--${item}.svg`} alt="" />
               </a>
             ))}

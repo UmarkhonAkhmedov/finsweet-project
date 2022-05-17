@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import { pricingFeaturesData, pricingPlansData } from "../dummyData";
 
 function PricingPlans() {
@@ -5,7 +7,7 @@ function PricingPlans() {
     <div className='container site-plans'>
       <div className="site-plans__heading">
         <h2>Our Pricing Plans</h2>
-        <p>When you’re ready to go beyond prototyping in Figma, Webflow is ready to help you bring your designs to life — without coding them.</p>
+        <p>When you&apos;re ready to go beyond prototyping in Figma, Webflow is ready to help you bring your designs to life — without coding them.</p>
       </div>
       <div className='plans'>
         {pricingPlansData.map((element, id) => (
@@ -19,12 +21,12 @@ function PricingPlans() {
             <ul>
               {pricingFeaturesData.map((item, id) => (
                 <li key={id}>
-                  <img src="/images/pricing/plans__play.svg"/>
+                  <Image width={26} height={18} src="/images/pricing/plans__play.svg" alt=""/>
                   {item}
                 </li>
               ))}
             </ul>
-            <a href="/contact">Get started</a>
+            <Link href="/contact" passHref>Get started</Link>
           </div>
         ))}
       </div>

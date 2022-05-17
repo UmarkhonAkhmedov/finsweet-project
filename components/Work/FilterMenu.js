@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 
@@ -8,11 +9,11 @@ function FilterMenu({menuItem}) {
       {menuItem.map((item) => {
         return (
           <div key={item.id} className="filterMenu__block">
-            <img className="filterMenu__block--img" src={`/images/work/template__${item.img}.png`} alt="" />
+            <Image width={623} height={380} className="filterMenu__block--img" src={`/images/work/template__${item.img}.png`} alt="" />
             <h3>{item.title}</h3>
             <p>{item.text}</p>
-            <Link href={`/work/${item.id}`}>
-              <span>View Portfolio <img src="/images/work/template__arrow.svg"/></span>
+            <Link href={`/work/${item.id}`} passHref> 
+              <span>View Portfolio <Image width={24} height={15} src="/images/work/template__arrow.svg" alt=""/></span>
             </Link>
           </div>
         )

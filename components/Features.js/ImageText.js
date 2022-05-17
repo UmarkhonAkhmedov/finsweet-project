@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 function ImageText({subtitle, title, text, color, img}) {
@@ -11,7 +12,7 @@ function ImageText({subtitle, title, text, color, img}) {
             <p>{text}</p>
           </div>
           <div className='imageText__img'>
-            <img src={`/images/features/${img}__img.png`}/>
+            <Image width={639} height={409} src={`/images/features/${img}__img.png`} alt=""/>
           </div>
         </div>
       </div>

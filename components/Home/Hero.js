@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import Image from 'next/image';
 
 function Hero({heading, text, buttonMain, buttonSm, img, link}) {
   return (
@@ -11,13 +12,13 @@ function Hero({heading, text, buttonMain, buttonSm, img, link}) {
             <p>{text}</p>
             <div className='hero__info--button'>
               <div  className="hero__info--button__main">
-                <Link href={link}>
+                <Link href={link} passHref>
                   {buttonMain}
                 </Link>
               </div>
               {buttonSm && 
               <div className="hero__info--button__sm"> 
-                <Link href="/pricing" >
+                <Link href="/pricing" passHref>
                   {buttonSm}
                 </Link>
                 <ArrowRightAltIcon className='icon'/>
@@ -26,7 +27,7 @@ function Hero({heading, text, buttonMain, buttonSm, img, link}) {
             </div>
           </div>
           <div className='hero__img'>
-            <img src={`images/${img}`} alt="" />
+            <Image width={638} height={361} src={`/images/${img}`} alt="" />
           </div>
         </div>
       </div>
