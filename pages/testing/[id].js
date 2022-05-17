@@ -12,7 +12,7 @@ function Details({items}) {
 
 export default Details;
 
-export const getStaticPaths = async () => {
+export async function getStaticPaths() {
   const paths = templateData.map(item => {
     return {
       params: {id: item.id.toString()}
@@ -25,7 +25,7 @@ export const getStaticPaths = async () => {
   }
 }
 
-export const getStaticProps = async (context) => {
+export async function getStaticProps(context) {
   const id = context.params.id
   const data = await templateData.context.params.id
   return {
