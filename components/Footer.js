@@ -9,8 +9,8 @@ function Footer() {
     <div className='site-footer'>
       <div className='container footer'>
         <div className='footer__left'>
-          <Link href="/">
-            <Image width={156} height={38}  src="/images/home/footer__logo.svg"/>
+          <Link href="/" passHref>
+            <Image width={156} height={38}  src="/images/home/footer__logo.svg" alt=""/>
           </Link>
           <p>We are always open to discuss your project and improve your online presence.</p>
           <div className='footer__left--contact'>
@@ -29,8 +29,8 @@ function Footer() {
           <p>We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.</p>
           <div className='footer__right--icons'>
             {footerSocialIconsData.map((icon, index) => (
-              <a key={index} href={`https://www.${icon}.com"`} target="_blank">
-                <img src={`/images/home/footer__icon--${icon}.svg`} alt=""/>
+              <a key={index} href={`https://www.${icon}.com"`}>
+                <Image width={16} height={16} src={`/images/home/footer__icon--${icon}.svg`} alt=""/>
               </a>
             ))}
           </div>

@@ -18,7 +18,7 @@ function HomeWork() {
         <div className='work__info'>
           {homeWorkData.map((element) => (
             <div className='work__info--block' key={element.id}>
-              <Image width={50} height={50} src={`/images/Home/work__icon--${element.img}.svg`}/>
+              <Image width={50} height={50} src={`/images/Home/work__icon--${element.img}.svg`} alt=""/>
               <h3>{element.title}</h3>
               <p>{element.text}</p>
             </div>

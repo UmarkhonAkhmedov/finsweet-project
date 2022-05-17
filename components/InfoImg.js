@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 function InfoImg({subTitle, title, text, img}) {
@@ -9,7 +10,7 @@ function InfoImg({subTitle, title, text, img}) {
         <p>{text}</p>
       </div>
       <div className='infoImg__img'>
-        <img src={img}/>
+        <Image width={547} height={336} src={img} alt=""/>
       </div>
     </div>
   );

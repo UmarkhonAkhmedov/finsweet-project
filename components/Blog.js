@@ -11,7 +11,7 @@ function Blog({data}) {
             <time>{index.date}</time>
             <h6>{index.title}</h6>
             <p>{index.text}</p>
-            <Link href={`/blog/${id + 1}`}>
+            <Link href={`/blog/${id + 1}`} passHref>
               <span>Read More <Image width={24} height={12} src="/images/blog/blog__arrow.svg" alt="" /></span>
             </Link>
           </div>
