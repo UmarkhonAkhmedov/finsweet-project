@@ -1,4 +1,3 @@
-import React from 'react';
 import AboutUs from '../components/About/AboutUs';
 import Mission from '../components/About/Mission';
 import Process from '../components/About/Process';
@@ -9,7 +8,7 @@ import Brand from '../components/Brand';
 import { featuresAboutData } from '../components/dummyData';
 import Feature from '../components/Feature'
 
-function About() {
+function about() {
   return (
     <div className=''>
       <AboutUs/>
@@ -29,4 +28,4 @@ function About() {
   );
 }
 
-export default About;
+export default about;
