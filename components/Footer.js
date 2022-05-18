@@ -30,7 +30,7 @@ function Footer() {
           <div className='footer__right--icons'>
             {footerSocialIconsData.map((icon, index) => (
               <a key={index} href={`https://www.${icon}.com"`}>
-                <Image width={16} height={16} src={`/images/home/footer__icon--${icon}.svg`} alt=""/>
+                <Image width={16} height={16} src={`/images/Home/footer__icon--${icon}.svg`} alt=""/>
               </a>
             ))}
           </div>
