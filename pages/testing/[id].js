@@ -1,18 +1,20 @@
 import React from 'react';
 import { templateData } from '../../components/dummyData';
 
-function Details({items}) {
+function Details({item}) {
+  
+  console.log("items", item)
   return (
     <div style={{backgroundColor: 'red'}}>
       Details
-      <h2>{items.title}</h2>
+      <h2>{item.title}</h2>
     </div>
   );
 }
 
 export default Details;
 
-export async function getStaticPaths() {
+export function getStaticPaths() {
   const paths = templateData.map(item => {
     return {
       params: {id: item.id.toString()}
@@ -25,12 +27,12 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps(context) {
+export function getStaticProps(context) {
   const id = context.params.id
-  const data = await templateData.context.params.id
+  const data = templateData.filter((item) => item.id == id)[0]
   return {
     props: {
-      items : data,
+      item : data,
     }
   }
 }
