@@ -122,7 +122,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 15px;
+
+        &--img {
+          display: flex;
+          align-items: center;
+          margin-left: 15px;
+        }
       }
     }
   }
