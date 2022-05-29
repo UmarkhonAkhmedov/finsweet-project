@@ -12,7 +12,7 @@ function Blog({data}) {
             <h6>{index.title}</h6>
             <p>{index.text}</p>
             <Link href={`/blog/${id + 1}`} passHref>
-              <span>Read More <Image width={44} height={12} src="/images/Blog/blog__arrow.svg" alt="" /></span>
+              <span><span>Read More</span> <Image width={44} height={12} src="/images/Blog/blog__arrow.svg" alt="" /></span>
             </Link>
           </div>
         ))}
