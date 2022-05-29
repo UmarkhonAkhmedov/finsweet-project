@@ -21,7 +21,7 @@ function PricingPlans() {
             <ul>
               {pricingFeaturesData.map((item, id) => (
                 <li key={id}>
-                  <Image width={26} height={18} src="/images/pricing/plans__play.svg" alt=""/>
+                  <Image width={26} height={18} src="/images/Pricing/plans__play.svg" alt=""/>
                   {item}
                 </li>
               ))}

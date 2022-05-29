@@ -10,7 +10,7 @@ function Vision() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div className='vision__img'>
-          <Image width={514} height={334} src="/images/about/vision__img.png" alt=""/>
+          <Image width={514} height={334} src="/images/About/vision__img.png" alt=""/>
         </div>
       </div>
     </div>

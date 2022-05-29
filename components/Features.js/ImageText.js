@@ -12,7 +12,7 @@ function ImageText({subtitle, title, text, color, img}) {
             <p>{text}</p>
           </div>
           <div className='imageText__img'>
-            <Image width={639} height={409} src={`/images/features/${img}__img.png`} alt=""/>
+            <Image width={639} height={409} src={`/images/Features/${img}__img.png`} alt=""/>
           </div>
         </div>
       </div>

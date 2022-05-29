@@ -13,7 +13,7 @@ function Portfolio() {
           <div className='portfolio__icons'>
             {portfolioIconsData.map((item, id) => (
               <a key={id} href={`https://www.${item}.com`}>
-                <Image width={16} height={16} src={`/images/work/portfolio__icon--${item}.svg`} alt="" />
+                <Image width={16} height={16} src={`/images/Work/portfolio__icon--${item}.svg`} alt="" />
               </a>
             ))}
           </div>

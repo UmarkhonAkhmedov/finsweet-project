@@ -7,7 +7,7 @@ function Feature({data, color}) {
         {
           data.map((element) => (
             <div key={element.id} className="feature__block" style={{backgroundColor: `${color}`}}>
-              <Image width={32} height={32} src={`/images/home/features__icon--${element.img}.svg`} alt="" />
+              <Image width={32} height={32} src={`/images/Home/features__icon--${element.img}.svg`} alt="" />
               <h4>{element.title}</h4>
               <p>{element.text}</p>
             </div>

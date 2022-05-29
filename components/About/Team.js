@@ -10,11 +10,11 @@ function Team() {
         {teamData.map((item) => (
           <div className='team__block' key={item.id}>
             <div className='team__block--img'>
-              <Image width={168} height={168} className='team__block--img__main' src={`/images/about/team__${item.img}.svg`} alt=""/>
+              <Image width={168} height={168} className='team__block--img__main' src={`/images/About/team__${item.img}.svg`} alt=""/>
               <div className='team__block--img__links'>
                 {teamSocialIconsData.map((icon, index) => (
                 <a key={index} href={`https://www.${icon}.com"`}>
-                  <Image width={13} height={13} src={`/images/home/footer__icon--${icon}.svg`} alt=""/>
+                  <Image width={13} height={13} src={`/images/Home/footer__icon--${icon}.svg`} alt=""/>
                 </a>
                 ))}
               </div>

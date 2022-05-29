@@ -12,7 +12,7 @@ function HomeWork() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           <div className='work__heading--link'>
             <Link href="/contact" passHref>Get in touch with us</Link>
-            <Image width={24} height={15} src="/images/home/work__icon--arrow.svg" alt="" />
+            <Image width={24} height={15} src="/images/Home/work__icon--arrow.svg" alt="" />
           </div>
         </div>
         <div className='work__info'>

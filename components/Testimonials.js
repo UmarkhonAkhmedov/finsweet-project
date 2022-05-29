@@ -27,7 +27,7 @@ function Testimonials() {
       <p>&quot;{testimonialData[current].quote}&quot;</p>
       <div className="testimonials__main">
         <div className="testimonials__main--client">
-          <Image width={52} height={52} src={`/images/home/${testimonialData[current].clientImg}`} alt=""/>
+          <Image width={52} height={52} src={`/images/Home/${testimonialData[current].clientImg}`} alt=""/>
           <span>
             <h5>{testimonialData[current].client}</h5>
             <h6>{testimonialData[current].clientJob}</h6>

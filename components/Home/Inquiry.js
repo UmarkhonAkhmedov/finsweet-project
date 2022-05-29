@@ -22,7 +22,7 @@ function Inquiry() {
             </form>
             <div className='inquiry__contact--details__link'>
               <Link href="/contact" passHref>Get in touch with us</Link>
-              <Image width={24} height={15} src="/images/home/send__arrow.svg" alt=""/>
+              <Image width={24} height={15} src="/images/Home/send__arrow.svg" alt=""/>
             </div>
           </div>
         </div>  
