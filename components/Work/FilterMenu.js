@@ -9,7 +9,9 @@ function FilterMenu({menuItem}) {
       {menuItem.map((item) => {
         return (
           <div key={item.id} className="filterMenu__block">
-            <Image width={623} height={380} className="filterMenu__block--img" src={`/images/Work/template__${item.img}.png`} alt="" />
+            <div className="filterMenu__block--img">
+              <Image width={623} height={380}  src={`/images/Work/template__${item.img}.png`} alt="" />
+            </div>
             <h3>{item.title}</h3>
             <p>{item.text}</p>
             <Link href={`/work/${item.id}`} passHref> 

@@ -7,7 +7,9 @@ function Brand() {
     <div className='container'>
       <div className='brand'>
         {brandData.map((item, index) => (
-          <Image key={index} width={120} height={60} src={`/images/About/brand__${item}.svg`} alt=""/>
+          <div>
+            <Image key={index} width={130} height={60} src={`/images/About/brand__${item}.svg`} alt=""/>
+          </div>
         ))}
       </div>
     </div>

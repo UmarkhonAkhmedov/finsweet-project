@@ -10,7 +10,7 @@ function Footer() {
       <div className='container footer'>
         <div className='footer__left'>
           <Link href="/" passHref>
-            <Image width={156} height={38}  src="/images/Home/footer__logo.svg" alt=""/>
+            <Image width={156} height={38} src="/images/Home/footer__logo.svg" alt=""/>
           </Link>
           <p>We are always open to discuss your project and improve your online presence.</p>
           <div className='footer__left--contact'>
